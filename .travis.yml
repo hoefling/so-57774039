@@ -15,10 +15,6 @@ addons:
 before_script:
   - export DISPLAY=:99.0
 install:
-  - npm set progress=false
-  - npm install
+  - yarn install
 script:
-  - ng lint
-  - npm run test
-  - npm run e2e
-  - npm run build
+  - yarn build
